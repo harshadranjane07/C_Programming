@@ -1,0 +1,85 @@
+/*
+Step 1: Understand the problem statement
+Step 2: Write an algorithm
+Step 3: Decide the Programming Language
+Step 4: Write the Program
+Step 5: Test the Program
+*/
+/////////////////////////////////////////////////////////////////////////////////////////
+// Step 1: Understand the problem statement
+//         User is going to enter any two integer
+//         And we have to perform an addtion
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+// Step 2: Write the algorithm
+/*
+    START
+        Accept first number as No1
+        Accept second number as No2
+        Create the variable as Ans to store the result
+        Perform the addition
+        Display the result
+    END
+*/
+/////////////////////////////////////////////////////////////////////////////////////////
+// Step 3: Decide the Programming Language 
+//         We select C Programming
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+// Step 4: Write the Program
+/////////////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Function Name  :  Addition
+// Input          :  Integer, Integer
+// Output         :  Integer
+// Description    :  Performs addition 
+// Date           :  04/10/2026
+// Author         :  Harshad Subhash Ranjane 
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+int Addition (int iNo1, int iNo2)
+{
+    int iAns = 0;
+
+    iAns = iNo1 + iNo2;  //Business Logic
+
+    return iAns;
+}
+/////////////////////////////////////////////////////////////////////////////////////////
+//  
+//  Entry point of the Application
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+int main()
+{   int iValue1 = 0, iValue2 = 0, iResult = 0;
+
+    printf("Enter first number : \n");
+    scanf("%d",&iValue1);
+
+    printf("Enter second number : \n");
+    scanf("%d",&iValue2);
+
+    iResult = Addition(iValue1,iValue2);  
+
+    printf("Addition is : %d\n",iResult);
+
+    return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// Step 5:Test the program
+//
+//  Tested test cases
+//---------------------------------------------------------------------------------------
+//      Input1       Input2    Output 
+//---------------------------------------------------------------------------------------
+//      10            11        21
+//      11            0         11
+//      0             11        11
+//      10            11        21
+//      10            -9        1
+//      -2            4         2
+//      -4            -4        -8
+/////////////////////////////////////////////////////////////////////////////////////////
