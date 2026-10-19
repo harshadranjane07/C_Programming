@@ -1,0 +1,46 @@
+/*
+Step 1: Understand the problem statement
+Step 2: Write an algorithm
+Step 3: Decide the Programming Language
+Step 4: Write the Program
+Step 5: Test the Program
+*/
+/////////////////////////////////////////////////////////////////////////////////////////
+// Step 1: Understand the problem statement
+//         User is going to enter any two integer
+//         And we have to perform an addtion
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+// Step 2: Write the algorithm
+/*
+    START
+        Accept first number as No1
+        Accept second number as No2
+        Create the variable as Ans to store the result
+        Perform the addition
+        Display the result
+    END
+*/
+/////////////////////////////////////////////////////////////////////////////////////////
+// Step 3: Decide the Programming Language 
+//         We select C Programming
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+// Step 4: Write the Program
+/////////////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+int main()
+{   int iValue1 = 0, iValue2 = 0, iResult = 0;
+
+    printf("Enter first number : \n");
+    scanf("%d",&iValue1);
+
+    printf("Enter second number : \n");
+    scanf("%d",&iValue2);
+
+    iResult = iValue1 + iValue2;  //Business Logic
+
+    printf("Addition is : %d\n",iResult);
+
+    return 0;
+}
