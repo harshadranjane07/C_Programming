@@ -1,0 +1,44 @@
+ 
+#include<stdio.h>
+#include<stdlib.h>
+
+void CountFrequencyX(char *str)
+{
+    int iCountSmall = 0, iCounCapital = 0, iCountDigit = 0;
+    while(*str != '\0')
+    {
+        if(*str>='a' && *str<='z'){
+            iCountSmall++;
+
+        }
+        else if(*str>='A' && *str<='Z'){
+            iCounCapital++;
+
+        }
+        else{ //Issue
+            iCountDigit++;
+
+        }
+        str++;
+    }
+    printf("Count Of Small Character is : %d\n",iCountSmall);
+    printf("Count Of Capital Character is : %d\n",iCounCapital);
+    printf("Count Of Digits is : %d\n",iCountDigit);
+}
+ 
+
+
+
+int main()
+{   
+     
+    char Arr[100] = {'\0'};
+
+    printf("Enter String : \n");
+    scanf("%[^'\n]s",Arr);
+
+    CountFrequencyX(Arr);
+     
+ 
+    return EXIT_SUCCESS;
+}
