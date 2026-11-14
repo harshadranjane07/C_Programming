@@ -1,0 +1,36 @@
+/*Accept number of row and number of columns from user and display below pattern.*/
+//Input : iRow = 4 iCol = 4
+//Output :   1    2    3    4
+//           5    6    7    8
+//           9   10   11   12
+//          13   14   15   16
+#include<stdio.h>
+#include<stdlib.h>
+void Pattern(int iRow,int iCol)
+{
+    //Logic
+    int iCount = 1;
+    for(int i = 0;i<iRow;i++)
+    {   
+         
+        for(int j = 0; j<iCol; j++)
+        {
+            printf("%d\t",iCount);
+            iCount++;
+             
+        }
+        printf("\n");
+         
+    }
+}
+int main()
+{   
+    int iValue1= 0,iValue2 = 0;
+
+    printf("Enter Number of Row and Columns:");
+    scanf("%d %d",&iValue1,&iValue2);
+
+    Pattern(iValue1,iValue2);
+
+    return EXIT_SUCCESS;
+}
